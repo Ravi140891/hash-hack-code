@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.task h1 {
+  margin: 5rem 0;
+}
+.flower {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pallete {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  opacity: 0.9;
+}
+.leave1 {
+  background: linear-gradient(to right, #4850ea, #a35570);
+  position: absolute;
+  z-index: 10;
+  transform: rotate(45deg);
+  border-radius: 100px 0 100px 0;
+}
+.leave2 {
+  background: linear-gradient(to right, #e699f0, #4850ea);
+  position: absolute;
+  z-index: 8;
+  transform: rotate(90deg);
+  border-radius: 100px 0 100px 0;
+}
+.leave3 {
+  background: linear-gradient(to right, #fdbc55, #fef45d);
+  position: absolute;
+  z-index: 7;
+  transform: rotate(135deg);
+  border-radius: 100px 0 100px 0;
+}
+.leave4 {
+  background: linear-gradient(to right, #fdbcc5, #fd4955);
+  position: absolute;
+  z-index: 9;
+  border-radius: 100px 0 100px 0;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.red {
+  background-color: red;
+  position: relative;
+}
+.grey {
+  background-color: #f5f6fa;
+  position: relative;
+}
+.lightblue {
+  background-color: #8090a5;
+  position: relative;
+}
+.blue {
+  background-color: #283e74;
+  position: relative;
+}
+.petal {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.petal1 {
+  background-color: #f5f6fa;
+  right: 0;
+  bottom: 0;
+  border-radius: 100% 0 100% 0;
+}
+.petal2 {
+  background-color: #283e74;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 100% 0 100%;
+}
+.petal3 {
+  background-color: red;
+  right: 0;
+  top: 0;
+  border-radius: 0 100% 0 100%;
+}
+.petal4 {
+  background-color: #8090a5;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 100% 0;
+}
+.table {
+  width: 500px;
+  border: 1px solid white;
+}
+.table caption {
+  font-size: 2rem;
+}
+.table tr th {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.table tr td {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+.table .blue {
+  background-color: #a1ccff;
+}
+.table .green {
+  background-color: #c1faf4;
+}
+.table .pink {
+  background-color: #f3a0e5;
+}
